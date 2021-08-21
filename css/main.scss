@@ -649,7 +649,7 @@ p, h1, h2, h3 {
 //project 3 text
 .block-projects:nth-of-type(5) {
   @include project-listing-text;
-  margin-right: -5rem;
+  margin-right: -10rem;
 }
 
 .block-projects-img {
