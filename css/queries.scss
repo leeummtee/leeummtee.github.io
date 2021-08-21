@@ -318,14 +318,16 @@
   }
 
   /* rearrange order so title goes before pic */
-  #project2-pic {
+  #project2-desc {
     padding-top: 5rem;
     order: 3;
   }
 
-  #project2-desc {
+  #project2-pic {
     order: 4;
   }
+
+
 
   .button-nav {
     width: 99%;

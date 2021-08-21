@@ -634,14 +634,22 @@ p, h1, h2, h3 {
   max-width: 35vw;
 }
 
+// poster text
 .block-projects:nth-of-type(1) {
   @include project-listing-text;
   margin-right: -10rem;
 }
 
+// motion graphic text
 .block-projects:nth-of-type(4) {
   @include project-listing-text;
   margin-left: -10rem;
+}
+
+//project 3 text
+.block-projects:nth-of-type(5) {
+  @include project-listing-text;
+  margin-right: -5rem;
 }
 
 .block-projects-img {
@@ -665,11 +673,19 @@ p, h1, h2, h3 {
 }
 
 #project2-pic {
-  order: 4;
+  order: 3;
 }
 
 #project2-desc {
-  order: 3;
+  order: 4;
+}
+
+#project3-desc {
+  order: 5;
+}
+
+#project3-pic {
+  order: 6;
 }
 
 strong {
