@@ -97,16 +97,20 @@ $black: #000000;
   display: inline-block;
   padding: 0.5rem;
   font-size: 1.3rem;
-  color: white;
+  // color: white;
+  color: $gold-color;
   font-family: 'Nunito', sans-serif;
   text-decoration: none;
-  border: 2px solid white;
+  // border: 2px solid white;
+  border: 2px solid $gold-color;
   transition-duration: 0.5s;
 }
 
 .button-nav:hover {
-  color: $grey-hover;
-  background-color: $light-grey;
+  // color: $grey-hover;
+  // background-color: $light-grey;
+  color: $link-hover;
+  background-color: $gold-color;
 }
 
 .button-nav:focus {
@@ -652,6 +656,12 @@ p, h1, h2, h3 {
   margin-right: -10rem;
 }
 
+//project 3 text
+.block-projects:nth-of-type(8) {
+  @include project-listing-text;
+  margin-left: -10rem;
+}
+
 .block-projects-img {
   position: relative;
   flex-grow: 1;
@@ -686,6 +696,14 @@ p, h1, h2, h3 {
 
 #project3-pic {
   order: 6;
+}
+
+#project4-desc {
+  order: 8;
+}
+
+#project4-pic {
+  order: 7;
 }
 
 strong {
