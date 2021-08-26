@@ -656,10 +656,16 @@ p, h1, h2, h3 {
   margin-right: -10rem;
 }
 
-//project 3 text
+//project 4 text
 .block-projects:nth-of-type(8) {
   @include project-listing-text;
   margin-left: -10rem;
+}
+
+//project 5 text
+.block-projects:nth-of-type(9) {
+  @include project-listing-text;
+  margin-right: -10rem;
 }
 
 .block-projects-img {
@@ -704,6 +710,14 @@ p, h1, h2, h3 {
 
 #project4-pic {
   order: 7;
+}
+
+#project5-desc {
+  order: 9;
+}
+
+#project5-pic {
+  order: 10;
 }
 
 strong {
