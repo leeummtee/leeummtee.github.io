@@ -222,7 +222,7 @@
 }
 
 .container-header {
-  padding-top: 16rem;
+  padding-top: 20rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -441,7 +441,7 @@ button:focus {
 h2 {
   margin-top: 3rem;
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -454,7 +454,7 @@ h1 {
 p {
   font-family: "Nunito", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 h3 {
@@ -556,22 +556,23 @@ p, h1, h2, h3 {
 /* ~~~~~~~~~~~~~~~PROJECTS OVERVIEW~~~~~~~~~~~~~~~~~~~~~ */
 .container-projects {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 0;
-  margin-top: 15rem;
-  justify-content: flex-start;
+  padding-top: 15rem;
+  justify-content: space-between;
+}
+
+.container-project-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+  flex: 0 100%;
 }
 
 .container-projects h2 {
   color: white;
-}
-
-.text {
-  padding: 0;
 }
 
 .block-projects {
@@ -596,11 +597,7 @@ p, h1, h2, h3 {
 }
 
 .block-projects p {
-  width: 30vw;
-}
-
-.block-projects h2 {
-  max-width: 35vw;
+  width: 20vw;
 }
 
 .block-projects:nth-of-type(5) {
@@ -641,38 +638,6 @@ p, h1, h2, h3 {
   margin-top: 0rem;
 }
 
-#project2-pic {
-  order: 3;
-}
-
-#project2-desc {
-  order: 4;
-}
-
-#project3-desc {
-  order: 5;
-}
-
-#project3-pic {
-  order: 6;
-}
-
-#project4-desc {
-  order: 8;
-}
-
-#project4-pic {
-  order: 7;
-}
-
-#project5-desc {
-  order: 9;
-}
-
-#project5-pic {
-  order: 10;
-}
-
 strong {
   margin-top: 3rem;
   font-size: 2rem;
@@ -683,8 +648,8 @@ strong {
 .image-link {
   transition: transform 1.2s;
   float: left;
-  width: 40rem;
-  height: 30rem;
+  width: 35rem;
+  height: 25rem;
   object-fit: cover;
 }
 

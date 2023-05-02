@@ -44,7 +44,7 @@
   <section class="container-header">
     <div class="block">
       <header class="header-text-detailed">
-        <h1 id="project-header"> hey, I'm Liam!</h1>
+        <h1 id="project-header text"> hey, I'm Liam!</h1>
         <!-- down arrow reference: https://www.w3schools.com/howto/howto_css_arrows.asp -->
 
         <p>  a UX / UI designer who strives to uncover and create meaningful design interventions</p>
@@ -53,46 +53,43 @@
     </div>
   </section>
 
-
   <section class="container-header">
     <h2 class="divider left-aligned"> featured UX / UI works</h2>
   </section>
 
   <section class="container-projects">
+  <!-- <section class="container-overview"> -->
 
     <!-- POSTER SECTION -->
     <!-- fading animation from https://stackoverflow.com/questions/38673081/how-to-make-the-content-appear-on-scrolling-down-the-webpage/38673529 -->
     <!-- type 1 -->
-    <div class="block-projects text" data-aos-duration="1000" data-aos="fade-right">
-      <h2> poster </h2>
-      <p>
-        designing a poster that communicated a piece of advice to incoming freshmen.
-      </p>
-      <p>
-        <a class="button-nav" role="button" href="poster.html"> read more </a>
-      </p>
-    </div>
+    <section class = "container-project-row" >
+      <div class="block-projects" data-aos-duration="1000" data-aos="fade-right">
+        <h2> poster </h2>
+        <p>
+          designing a poster that communicated a piece of advice to incoming freshmen.
+        </p>
+        <p>
+          <a class="button-nav" role="button" href="poster.html"> read more </a>
+        </p>
+      </div>
 
-    <!-- type 2 -->
-    <div class="block-projects">
-      <!-- making image respond to tab focus reference from http://jsfiddle.net/4x7wg7sb/1/ -->
-      <a href="poster.html" onclick="this.focus()" class="imageAnchor" >
-        <img class="image-link" src="compressed-images/poster-render.jpg" alt="mockup render of my poster">
-      </a>
-    </div>
+
+      <!-- type 2 -->
+      <div class="block-projects">
+        <!-- making image respond to tab focus reference from http://jsfiddle.net/4x7wg7sb/1/ -->
+        <a href="poster.html" onclick="this.focus()" class="imageAnchor" >
+          <img class="image-link" src="compressed-images/poster-render.jpg" alt="mockup render of my poster">
+        </a>
+      </div>
+    </section>
     <!-- END OF POSTER SECTION -->
 
     <!-- MOTION GRAPHIC SECTION -->
     <!-- making image respond to tab focus reference from http://jsfiddle.net/4x7wg7sb/1/ -->
     <!-- type 3 -->
-    <div class="block-projects" id=project2-pic>
-      <a href="kinetic.html" class="imageAnchor" onclick="this.focus()">
-        <img class="image-link" src="compressed-images/kinetic-cropped.png" alt="screenshot of my motion graphic">
-      </a>
-    </div>
-
-    <!-- type 4 -->
-    <div class="block-projects" data-aos-duration="1000" data-aos="fade-left" id=project2-desc>
+    <section class = "container-project-row" >
+    <div class="block-projects" data-aos-duration="1000" data-aos="fade-right" id=project2-desc>
       <h2> motion graphic animation </h2>
       <p>
         visualizing a clip of dialogue through the use of kinetic typography and motion graphics.
@@ -101,6 +98,18 @@
         <a class="button-nav" role="button" href="kinetic.html"> read more </a>
       </p>
     </div>
+
+      <div class="block-projects" id=project2-pic>
+        <a href="kinetic.html" class="imageAnchor" onclick="this.focus()">
+          <img class="image-link" src="compressed-images/kinetic-cropped.png" alt="screenshot of my motion graphic">
+        </a>
+      </div>
+    </section>
+
+      <!-- type 4 -->
+
+    <!-- </section> -->
+
     <!-- END OF MOTION GRAPHIC SECTION -->
 
 

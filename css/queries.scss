@@ -422,22 +422,22 @@
 }
 
 // making the projects align properly on the project overview page
-@media screen and (min-width: 1800px) {
-  .container-projects {
-    @include flex-wrap-center;
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-}
-
-// making the projects align properly on the project overview page
-@media screen and (min-width: 2190px) {
-  .container-projects {
-    @include flex-wrap-center;
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-}
+// @media screen and (min-width: 1800px) {
+//   .container-projects {
+//     @include flex-wrap-center;
+//     margin-left: 6rem;
+//     margin-right: 6rem;
+//   }
+// }
+//
+// // making the projects align properly on the project overview page
+// @media screen and (min-width: 2190px) {
+//   .container-projects {
+//     @include flex-wrap-center;
+//     margin-left: 20rem;
+//     margin-right: 20rem;
+//   }
+// }
 
 /* MOBILE RESPONSIVENESS QUERIES */
 @media screen and (max-width: 800px) {

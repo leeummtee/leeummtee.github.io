@@ -266,7 +266,7 @@ $black: #000000;
 }
 
 .container-header {
-  padding-top: 16rem;
+  padding-top: 20rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -491,7 +491,7 @@ button:focus {
 h2 {
   margin-top: 3rem;
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: 'Open Sans', sans-serif;
 
 }
@@ -505,7 +505,7 @@ h1 {
 p {
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 h3 {
@@ -613,16 +613,22 @@ p, h1, h2, h3 {
 
 /* ~~~~~~~~~~~~~~~PROJECTS OVERVIEW~~~~~~~~~~~~~~~~~~~~~ */
 .container-projects {
-  @include flex-wrap-center;
-  padding-top: 0;
-  margin-top: 15rem;
-  justify-content: flex-start;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  // @include flex-wrap-center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 15rem;
+  justify-content: space-between;
 }
 
+.container-project-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+  flex: 0 100%;
+}
 // .container-header {
 //   padding-top: 16rem;
 //   display: flex;
@@ -637,8 +643,11 @@ p, h1, h2, h3 {
   color: white;
 }
 
+
+
 .text {
-  padding: 0;
+  // padding: 0;
+  // max-width: 100px;
 }
 
 .block-projects {
@@ -650,9 +659,6 @@ p, h1, h2, h3 {
   padding-right: 15rem;
 }
 
-.text {
-  // max-width: 500px;
-}
 
 #proj-desc-left {
   padding-right: 50rem;
@@ -668,11 +674,11 @@ p, h1, h2, h3 {
 }
 
 .block-projects p {
-  width: 30vw;
+  width: 20vw;
 }
 
 .block-projects h2 {
-  max-width: 35vw;
+  // max-width: 35vw;
 }
 
 // poster text
@@ -714,6 +720,7 @@ p, h1, h2, h3 {
   margin-top: -9rem;
 }
 
+
 .projects-img {
   float: left;
   width: 50rem;
@@ -725,37 +732,39 @@ p, h1, h2, h3 {
   margin-top: 0rem;
 }
 
-#project2-pic {
-  order: 3;
-}
 
-#project2-desc {
-  order: 4;
-}
 
-#project3-desc {
-  order: 5;
-}
-
-#project3-pic {
-  order: 6;
-}
-
-#project4-desc {
-  order: 8;
-}
-
-#project4-pic {
-  order: 7;
-}
-
-#project5-desc {
-  order: 9;
-}
-
-#project5-pic {
-  order: 10;
-}
+// #project2-pic {
+//   order: 3;
+// }
+//
+// #project2-desc {
+//   order: 4;
+// }
+//
+// #project3-desc {
+//   order: 5;
+// }
+//
+// #project3-pic {
+//   order: 6;
+// }
+//
+// #project4-desc {
+//   order: 8;
+// }
+//
+// #project4-pic {
+//   order: 7;
+// }
+//
+// #project5-desc {
+//   order: 9;
+// }
+//
+// #project5-pic {
+//   order: 10;
+// }
 
 strong {
   margin-top: 3rem;
@@ -768,8 +777,8 @@ strong {
 .image-link {
   transition: transform 1.2s;
   float: left;
-  width: 40rem;
-  height: 30rem;
+  width: 35rem;
+  height: 25rem;
   object-fit: cover;
 }
 
@@ -844,6 +853,7 @@ strong {
 .block-detailed h2{
   margin-top: 20rem;
 }
+
 
 /* making sure these left-aligned blocks do not share a row with another block */
 .block-detailed:nth-of-type(1), .block-detailed:nth-of-type(2), .block-detailed:nth-of-type(4), .block-detailed:nth-of-type(5), .block-detailed:nth-of-type(6), #reflection-poster, .block-detailed:nth-of-type(8), .block-detailed:nth-of-type(9), .block-detailed:nth-of-type(10) {
