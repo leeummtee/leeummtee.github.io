@@ -617,7 +617,21 @@ p, h1, h2, h3 {
   padding-top: 0;
   margin-top: 15rem;
   justify-content: flex-start;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+// .container-header {
+//   padding-top: 16rem;
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   // border-radius: 3px;
+//   padding-bottom: 15rem;
+// }
+
 
 .container-projects h2 {
   color: white;
