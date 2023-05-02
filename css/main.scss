@@ -312,10 +312,11 @@ $black: #000000;
 }
 
 .sidenav .closebtn {
-  position: absolute;
-  right: 4.75rem;
-  top: 2.5rem;
-  font-size: 60px;
+  // position: absolute;
+  // right: 20.5rem;
+  // top: 2.5rem;
+  margin-top: -2rem;
+  font-size: 50px;
   margin-left: 50px;
 }
 
@@ -327,8 +328,9 @@ $black: #000000;
 
 .icon-right-justified {
   float: right;
+  padding-top:1rem;
   transition-duration: 0.5s;
-  font-size:30px;
+  font-size:25px;
   cursor:pointer
 }
 
