@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+//importing poppins font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 //main colors
 $grey-hover: #808080;
 
@@ -12,7 +14,6 @@ $link-hover: #95731C;
 $light-grey: #d6d6d6;
 
 $black: #000000;
-
 
 //rectangle dimensions for style style guide
 @mixin rectangle {
@@ -240,9 +241,9 @@ $black: #000000;
 
 /* styling for the logo (my name)*/
 .logo {
-  margin-left: -2.5rem;
+  // margin-left: -2.5rem;
   font-family: 'Nunito', sans-serif;
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: white;
   font-weight: lighter;
   transition-duration: 0.5s;
@@ -269,7 +270,7 @@ $black: #000000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-radius: 3px;
+  // border-radius: 3px;
   padding-bottom: 15rem;
 }
 
@@ -325,9 +326,7 @@ $black: #000000;
 
 
 .icon-right-justified {
-  position: absolute;
-  right: 5.5rem;
-  top: 4rem;
+  float: right;
   transition-duration: 0.5s;
   font-size:30px;
   cursor:pointer
@@ -378,7 +377,7 @@ $black: #000000;
 /* logo in the top left */
 .topnav-left {
   float: left;
-  padding-left: 5rem;
+  // padding-left: 5rem;
   padding-top: 1.5rem;
 }
 
@@ -527,7 +526,7 @@ body {
   margin-right: 5rem;
   margin-top: 3rem;
   margin-bottom: 0rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   background-color: black;
   transition: background-color 1s ease;
@@ -547,6 +546,7 @@ p, h1, h2, h3 {
   flex-wrap: wrap;
   border-radius: 3px;
   margin-bottom: -20rem;
+  // justify-content: left;
 }
 
 .header-img {
@@ -602,6 +602,10 @@ p, h1, h2, h3 {
   text-align: center;
 }
 
+.wrapper {
+  max-width: 1450px;
+  margin: 0 auto;
+}
 
 
 
@@ -609,16 +613,33 @@ p, h1, h2, h3 {
 .container-projects {
   @include flex-wrap-center;
   padding-top: 0;
-  margin-top: -15rem;
+  margin-top: 15rem;
+  justify-content: flex-start;
 }
 
 .container-projects h2 {
   color: white;
 }
 
+.text {
+  padding: 0;
+}
+
 .block-projects {
   overflow: hidden;
-  margin-top: 15rem;
+  // margin-top: 15rem;
+}
+
+.block-projects-new {
+  padding-right: 15rem;
+}
+
+.text {
+  // max-width: 500px;
+}
+
+#proj-desc-left {
+  padding-right: 50rem;
 }
 
 .element .block-projects {
@@ -639,16 +660,16 @@ p, h1, h2, h3 {
 }
 
 // poster text
-.block-projects:nth-of-type(1) {
-  @include project-listing-text;
-  margin-right: -10rem;
-}
-
-// motion graphic text
-.block-projects:nth-of-type(4) {
-  @include project-listing-text;
-  margin-left: -10rem;
-}
+// .block-projects:nth-of-type(1) {
+//   @include project-listing-text;
+//   margin-right: -10rem;
+// }
+//
+// // motion graphic text
+// .block-projects:nth-of-type(4) {
+//   @include project-listing-text;
+//   margin-left: -10rem;
+// }
 
 //project 3 text
 .block-projects:nth-of-type(5) {
@@ -731,8 +752,8 @@ strong {
 .image-link {
   transition: transform 1.2s;
   float: left;
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 30rem;
   object-fit: cover;
 }
 
@@ -835,7 +856,7 @@ strong {
 
 /* ~~~~~~~~~~~~~~~~~~~~~ KINETIC TYPOGRAPHY DETAILED VIEW ~~~~~~~~~~~~~~~~ */
 .header-text-detailed {
-  text-align: center;
+  text-align: left;
 }
 
 .header-text-detailed h1 {
