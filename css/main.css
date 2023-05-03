@@ -222,11 +222,23 @@
 }
 
 .container-header {
-  padding-top: 20rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 15rem;
+  width: 1000px;
+}
+
+.container-intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-bottom: 10rem;
+}
+
+.intro {
+  width: 500px;
 }
 
 /* end of reference for block image overlays */
@@ -439,15 +451,19 @@ button:focus {
 }
 
 h2 {
-  margin-top: 3rem;
+  font-weight: 200;
+  font-size: 2.25rem;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 b {
   font-weight: 600;
-  font-size: 2.5rem;
-  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
   font-size: 4rem;
   margin-bottom: 0rem;
+  font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -458,10 +474,9 @@ p {
 }
 
 h3 {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 500;
-  font-size: 3rem;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 h4 {
@@ -469,6 +484,12 @@ h4 {
   font-family: "Open Sans";
   font-size: 1.2rem;
   text-decoration: underline;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 4rem;
 }
 
 body {
@@ -492,7 +513,6 @@ p, h1, h2, h3 {
   flex-direction: row;
   flex-wrap: wrap;
   border-radius: 3px;
-  margin-bottom: -20rem;
 }
 
 .header-img {
@@ -558,8 +578,7 @@ p, h1, h2, h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 15rem;
-  justify-content: space-between;
+  flex: 0 100%;
 }
 
 .container-project-row {
@@ -569,6 +588,7 @@ p, h1, h2, h3 {
   justify-content: space-between;
   padding-bottom: 10rem;
   flex: 0 100%;
+  align-items: center;
 }
 
 .container-projects h2 {
@@ -597,7 +617,7 @@ p, h1, h2, h3 {
 }
 
 .block-projects p {
-  width: 20vw;
+  width: 500px;
 }
 
 .block-projects:nth-of-type(5) {
@@ -649,7 +669,7 @@ strong {
   transition: transform 1.2s;
   float: left;
   width: 35rem;
-  height: 25rem;
+  height: 35rem;
   object-fit: cover;
 }
 
