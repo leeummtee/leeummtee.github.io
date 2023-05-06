@@ -239,6 +239,13 @@ $black: #000000;
   background-color: $gold-color;
 }
 
+//header image detailed viewport
+.header-image {
+  width: 100%;
+  padding-top:1rem;
+}
+
+
 /* styling for the logo (my name)*/
 .logo {
   // margin-left: -2.5rem;
@@ -437,7 +444,6 @@ $black: #000000;
   padding-top: 1rem;
 }
 
-
 /* crop for services header https://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped */
 .crop-header {
   width: 100%;
@@ -534,6 +540,10 @@ h3 {
   font-size: 1.5rem
 }
 
+.block-details b {
+  font-weight: 900;
+}
+
 h4 {
   font-style: italic;
   font-family: 'Open Sans';
@@ -547,6 +557,12 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 4rem;
+}
+
+h6 {
+  font-family: 'Poppins';
+  font-weight: 200;
+  font-size:1.25rem;
 }
 
 body {
@@ -631,7 +647,7 @@ p, h1, h2, h3 {
 }
 
 .wrapper {
-  max-width: 1450px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -710,36 +726,6 @@ p, h1, h2, h3 {
 
 .block-projects h2 {
   // max-width: 35vw;
-}
-
-// poster text
-// .block-projects:nth-of-type(1) {
-//   @include project-listing-text;
-//   margin-right: -10rem;
-// }
-//
-// // motion graphic text
-// .block-projects:nth-of-type(4) {
-//   @include project-listing-text;
-//   margin-left: -10rem;
-// }
-
-//project 3 text
-.block-projects:nth-of-type(5) {
-  @include project-listing-text;
-  margin-right: -10rem;
-}
-
-//project 4 text
-.block-projects:nth-of-type(8) {
-  @include project-listing-text;
-  margin-left: -10rem;
-}
-
-//project 5 text
-.block-projects:nth-of-type(9) {
-  @include project-listing-text;
-  margin-right: -10rem;
 }
 
 .block-projects-img {
@@ -824,13 +810,67 @@ strong {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~DETAILED PROJECT VIEW PAGES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.container-overview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom:5rem;
+  flex: 0 100%;
+}
+
+.container-overview p {
+  font-size: 1rem;
+}
+
+.container-overview h6{
+  margin-bottom:0;
+}
+
+.block-overview {
+  max-width: 250px;
+}
+
+
+//grid
+//end of grid
+
+.container-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  // padding-bottom: 10rem;
+  // align-items: center;
+}
+
+.block-details {
+  overflow: hidden;
+  flex: 0 100%;
+  padding-bottom: 5rem;
+}
+
+.gif {
+  width: 100%;
+}
+
+.part {
+  font-weight: 100;
+  margin-bottom: -2rem;
+}
+
+.block-details p {
+  max-width: 800px;
+}
+
 .container-summary {
   @include detailed-view-margins;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 15rem;
+  // padding-top: 15rem;
 }
+
 
 .container-summary h2 {
   margin-bottom: -1rem;
@@ -848,10 +888,17 @@ strong {
 
 .container-detailed {
   @include detailed-view-margins;
+  // display: flex;
+  // flex-wrap: wrap;
+  // padding-top: 5rem;
+  // justify-content: center;
+
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 20rem;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top:0rem;
+  flex: 0 100%;
 }
 
 .container-detailed h2.left-aligned{

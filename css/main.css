@@ -196,6 +196,11 @@
   background-color: #DAA520;
 }
 
+.header-image {
+  width: 100%;
+  padding-top: 1rem;
+}
+
 /* styling for the logo (my name)*/
 .logo {
   font-family: "Nunito", sans-serif;
@@ -479,6 +484,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+.block-details b {
+  font-weight: 900;
+}
+
 h4 {
   font-style: italic;
   font-family: "Open Sans";
@@ -490,6 +499,12 @@ h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   font-size: 4rem;
+}
+
+h6 {
+  font-family: "Poppins";
+  font-weight: 200;
+  font-size: 1.25rem;
 }
 
 body {
@@ -569,7 +584,7 @@ p, h1, h2, h3 {
 }
 
 .wrapper {
-  max-width: 1450px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -620,24 +635,6 @@ p, h1, h2, h3 {
   width: 500px;
 }
 
-.block-projects:nth-of-type(5) {
-  z-index: 1;
-  padding-top: 10rem;
-  margin-right: -10rem;
-}
-
-.block-projects:nth-of-type(8) {
-  z-index: 1;
-  padding-top: 10rem;
-  margin-left: -10rem;
-}
-
-.block-projects:nth-of-type(9) {
-  z-index: 1;
-  padding-top: 10rem;
-  margin-right: -10rem;
-}
-
 .block-projects-img {
   position: relative;
   flex-grow: 1;
@@ -684,13 +681,59 @@ strong {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~DETAILED PROJECT VIEW PAGES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.container-overview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  flex: 0 100%;
+}
+
+.container-overview p {
+  font-size: 1rem;
+}
+
+.container-overview h6 {
+  margin-bottom: 0;
+}
+
+.block-overview {
+  max-width: 250px;
+}
+
+.container-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.block-details {
+  overflow: hidden;
+  flex: 0 100%;
+  padding-bottom: 5rem;
+}
+
+.gif {
+  width: 100%;
+}
+
+.part {
+  font-weight: 100;
+  margin-bottom: -2rem;
+}
+
+.block-details p {
+  max-width: 800px;
+}
+
 .container-summary {
   margin-left: 10rem;
   margin-right: 10rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 15rem;
 }
 
 .container-summary h2 {
@@ -711,9 +754,11 @@ strong {
   margin-left: 10rem;
   margin-right: 10rem;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 20rem;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 0rem;
+  flex: 0 100%;
 }
 
 .container-detailed h2.left-aligned {
