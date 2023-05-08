@@ -850,8 +850,13 @@ strong {
   padding-bottom: 5rem;
 }
 
+.block-details p {
+  max-width:500px;
+}
+
 .gif {
-  width: 100%;
+  width: 600px;
+  height: 600px;
 }
 
 .part {
