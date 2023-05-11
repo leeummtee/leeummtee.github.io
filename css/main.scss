@@ -241,6 +241,7 @@ $black: #000000;
 
 //header image detailed viewport
 .header-image {
+  object-fit: cover;
   width: 100%;
   padding-top:1rem;
 }
@@ -508,6 +509,10 @@ button:focus {
   outline-color: $gold-color;
 }
 
+ol.li {
+
+}
+
 
 h2 {
   // margin-top: 3rem;
@@ -541,15 +546,13 @@ h3 {
 }
 
 .block-details b {
-  font-weight: 900;
+  // font-weight: 900;
 }
 
 h4 {
-  font-style: italic;
-  font-family: 'Open Sans';
+  font-family: 'Poppins';
+  font-weight: 300;
   font-size: 1.2rem;
-  text-decoration: underline;
-
 }
 
 //non bold for header
@@ -564,6 +567,9 @@ h6 {
   font-weight: 200;
   font-size:1.25rem;
 }
+
+
+
 
 body {
   margin-left: 5rem;
@@ -583,7 +589,6 @@ p, h1, h2, h3 {
 
 
 /* ~~~~~~~~~~~~~~~~~~~~ABOUT PAGE~~~~~~~~~~~~~~~~~~~~~~~ */
-
 .container-header {
   display: flex;
   flex-direction: row;
@@ -654,6 +659,11 @@ p, h1, h2, h3 {
 
 
 /* ~~~~~~~~~~~~~~~PROJECTS OVERVIEW~~~~~~~~~~~~~~~~~~~~~ */
+.project-details-wrapper {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
 .container-projects {
   // @include flex-wrap-center;
   display: flex;
@@ -831,6 +841,11 @@ strong {
   max-width: 250px;
 }
 
+.block-overview h6 {
+  margin-top:0;
+  margin-bottom: -1rem;
+}
+
 
 //grid
 //end of grid
@@ -839,7 +854,7 @@ strong {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   // padding-bottom: 10rem;
   // align-items: center;
 }
@@ -850,8 +865,9 @@ strong {
   padding-bottom: 5rem;
 }
 
-.block-details p {
-  max-width:500px;
+.block-details h3 {
+  margin-top:0;
+  margin-bottom: -1rem;
 }
 
 .gif {
@@ -865,7 +881,7 @@ strong {
 }
 
 .block-details p {
-  max-width: 800px;
+  // max-width: 800px;
 }
 
 .container-summary {
@@ -988,7 +1004,7 @@ strong {
 /* responsive video embed, reference from https://www.ostraining.com/blog/coding/responsive-videos/ */
 .video-responsive{
     overflow:hidden;
-    padding-bottom:56.25%;
+    // padding-bottom:56.25%;
     position:relative;
     height:0;
 }
@@ -1004,10 +1020,15 @@ strong {
 /* dividers for site */
 .divider {
   padding-bottom: 0.5rem;
-  margin-top: -1.5rem;
+  // margin-top: -1.5rem;
   border-bottom-width: 0.15rem;
   border-bottom-style: solid;
-  border-bottom-color: white;
+  border-bottom-color: gray;
+}
+
+h3.left-aligned {
+  font-size: 1.2rem;
+  color: gray;
 }
 
 .left-aligned {
