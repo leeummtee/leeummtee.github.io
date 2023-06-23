@@ -521,6 +521,10 @@ h2 {
   font-family: 'Poppins', sans-serif;
 }
 
+p b {
+  color: gold;
+}
+
 h2 b {
   font-weight:600;
 }
@@ -538,11 +542,20 @@ p {
   font-size: 1.25rem;
 }
 
+ol {
+
+}
+
 h3 {
   font-family: 'Poppins';
   // font-style: italic;
   font-weight: 300;
   font-size: 1.5rem
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #ffd75e;
 }
 
 .block-details b {
@@ -857,6 +870,22 @@ strong {
   justify-content: space-between;
   // padding-bottom: 10rem;
   // align-items: center;
+}
+
+.image-test {
+  // width: 100%;
+}
+
+.divide {
+  padding-top: 3rem;
+}
+
+.highlight {
+  color: #ffd75e;
+}
+
+.gold {
+  color: gold;
 }
 
 .block-details {
