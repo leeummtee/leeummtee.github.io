@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--I used P02 as reference -->
+<html class="wrapper" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title> Projects </title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/queries.css" rel="stylesheet">
+  <!-- linking the fade animations that must be loaded in header -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <nav>
+    <!-- logo in the top left -->
+    <div class="topnav">
+      <div class="topnav-left">
+        <a href="projects.html">
+          <span class="logo"> Liam Tangilag </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
+    <!-- reference for making sidenav accessible with tab index https://knowbility.org/blog/2020/accessible-slide-menus/ -->
+    <button class="icon-right-justified" onclick="openNav()">&#9776;</button>
+    <div id="mySidenav" class="sidenav inactive">
+      <a href="javascript:void(0)" role="button" class="closebtn" aria-label="close navigation" onclick="closeNav()">&times;</a>
+      <a href="about.html">contact + about</a>
+
+      <!-- drop down reference from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript -->
+      <button id="menu" class="dropbtn" onclick="toggleMenu()"> projects <i class="small-arrow down"> </i></button>
+      <div id="menu-box" class="drop-content">
+        <a href="projects.html">overview</a>
+        <a href="oneiota.html">OneIota</a>
+        <a href="milklady.html">Milklady Soap Co.</a>
+        <a href="dipdr.html">The Dip Dr.</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-header">
+    <header class="header-text-detailed">
+      <h5 id="project-header"> hey, I'm <b> Liam</b>! a <b> UX / UI </b> designer who strives to create meaningful design solutions. </h5>
+      <!-- down arrow reference: https://www.w3schools.com/howto/howto_css_arrows.asp -->
+    </header>
+  </section>
+
+  <div class="container-intro">
+    <div class="intro">
+      <p>
+         Currently looking to develop my UX / UI skills, but open to entering related fields! My B. Sc. from SFU's Interactive Arts & Technology program helped nurture and develop a variety of skills.
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="divider left-aligned"> featured UX / UI works</h3>
+  </div>
+
+    <!-- Oneiota Golf Performance -->
+    <!-- fading animation from https://stackoverflow.com/questions/38673081/how-to-make-the-content-appear-on-scrolling-down-the-webpage/38673529 -->
+    <!-- type 1 -->
+    <section class = "container-project-row">
+      <div class="block-projects" data-aos-duration="1000" data-aos="fade-right">
+        <h2> <b> Oneiota Golf Performance  <b> </h2>
+        <p>
+          Designed a mobile app prototype for a client during the Eunoia one-week UX Hackathon. Chosen as the best team within the client group.
+        </p>
+        <p>
+          <a class="button-nav" role="button" href="oneiota.html"> read more </a>
+        </p>
+      </div>
+
+
+      <!-- type 2 IMAGE -->
+      <div class="block-projects">
+        <!-- making image respond to tab focus reference from http://jsfiddle.net/4x7wg7sb/1/ -->
+        <a href="oneiota.html" onclick="this.focus()" class="imageAnchor" >
+          <img class="image-link" src="compressed-images/Cover.png" alt="mockup render of my poster">
+        </a>
+      </div>
+    </section>
+    <!-- END OF ONEIOTA SECTION -->
+
+    <!-- Milklady Soap -->
+    <!-- making image respond to tab focus reference from http://jsfiddle.net/4x7wg7sb/1/ -->
+    <!-- type 3 -->
+    <section class = "container-project-row">
+      <div class="block-projects" data-aos-duration="1000" data-aos="fade-right" id=project2-desc>
+        <h2> <b> Milklady Soap Co. <b> </h2>
+        <p>
+          Worked with a local handicraft soap company to uncover painpoints within customer experiences, and ultimately created a prototype website redesign.
+        </p>
+        <p>
+          <a class="button-nav" role="button" href="milklady.html"> read more </a>
+        </p>
+      </div>
+
+      <div class="block-projects" id=project2-pic>
+        <a href="milklady.html" class="imageAnchor" onclick="this.focus()">
+          <img class="image-link" src="compressed-images/website - Copya.png" alt="screenshot of my motion graphic">
+        </a>
+      </div>
+    </section>
+    <!-- type 4 -->
+    <!-- END OF MILKLADY SECTION -->
+
+    <!-- DIP DR -->
+    <section class = "container-project-row">
+      <div class="block-projects" data-aos-duration="1000" data-aos="fade-right" id=project2-desc>
+        <h2> <b> The Dip Dr. <b> </h2>
+        <p>
+          Worked with a local automotive restyling company to evaluate their mobile website and determine usability concerns.
+        </p>
+        <p>
+          <a class="button-nav" role="button" href="dipdr.html"> read more </a>
+        </p>
+      </div>
+
+      <div class="block-projects" id=project2-pic>
+        <a href="dipdr.html" class="imageAnchor" onclick="this.focus()">
+          <img class="image-link" src="compressed-images/dip.png" alt="screenshot of my motion graphic">
+        </a>
+      </div>
+    </section>
+    <!-- END OF DIP DR SECTION -->
+
+
+  <!-- END OF PROJECTS OVERVIEW -->
+
+  <footer class="section-divider-footer">
+    <div class="container-footer">
+      <p> ©2023 - Liam Tangilag | </p>
+      <a class="link" href="citations.html"> LinkedIn </a>
+      <a class="link" href="https://github.com/leeummtee/P03"> Resume </a>
+    </div>
+  </footer>
+
+  <!-- linking the animation library  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- linking javascript file -->
+  <script src="js/main.js"></script>
+</body>
