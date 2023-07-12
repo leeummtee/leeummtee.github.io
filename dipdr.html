@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html class="wrapper" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title> The Dip Dr. </title>
+  <link href="css/main.css" rel="stylesheet">
+  <!-- <link href="css/queries.css" rel="stylesheet"> -->
+  <!-- linking the fade animations that must be loaded in header -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body id="poster">
+  <nav>
+    <!-- logo in the top left -->
+    <div class="topnav">
+      <div class="topnav-left">
+        <a href="projects.html">
+          <span class="logo"> Liam Tangilag </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
+    <!-- reference for making sidenav accessible with tab index https://knowbility.org/blog/2020/accessible-slide-menus/ -->
+    <button class="icon-right-justified" onclick="openNav()">&#9776;</button>
+    <div id="mySidenav" class="sidenav inactive">
+      <a href="javascript:void(0)" role="button" class="closebtn" aria-label="close navigation" onclick="closeNav()">&times;</a>
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+
+      <!-- drop down reference from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript -->
+      <button id="menu" class="dropbtn" onclick="toggleMenu()"> projects <i class="small-arrow down"> </i></button>
+      <div id="menu-box" class="drop-content">
+        <a href="projects.html">overview</a>
+        <a href="poster.html">poster</a>
+        <a href="kinetic.html">motion graphic</a>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <img class="header-image" src="compressed-images/DipDr/TheDipDrBanner.png" alt="App header">
+  </div>
+
+<!-- WRAPPER FOR BODY CONTENT -->
+<section class="project-details-wrapper">
+
+  <!-- INTRO -->
+  <section class="container-details">
+    <div class="block-details">
+      <!-- <h3 class="part"> the brand </h3> -->
+      <h2> <b> The Dip Dr. </b> </h2>
+      <p>
+        The Dip Dr. is a Vancouver-based company that specializes in automotive restyling. This includes services such as vinyl vehicle wraps, ceramic coats, bodykit installation, paint protection films, and so on.
+      </p>
+
+     <p>
+       For a Design Evaluation class' final project, my team and I worked with The Dip Dr. to conduct a usability-focused evaluation of their website.
+     </p>
+    </div>
+  </section>
+  <!-- END OF INTRO -->
+
+  <!-- PROJECT OVERVIEW -->
+  <div>
+    <h3 class="divider left-aligned"> project overview </h3>
+  </div>
+
+
+<!-- PROJECT SUMMARY -->
+  <section class="container-details">
+    <div class="block-overview">
+      <h6> <b> Context </b> </h6>
+      <p>
+        4-week long project as part of an upper level design evaluation course
+      </p>
+    </div>
+
+    <div class="block-overview">
+      <h6> <b> My role </b> </h6>
+      <p>
+        Heuristic evaluations, UX research, copywriting
+      </p>
+    </div>
+
+    <div class="block-overview">
+      <h6> <b> Tools </b> </h6>
+      <p>
+        Figma
+      </p>
+    </div>
+
+    <div class="block-overview">
+      <h6> <b> Team </b> </h6>
+      <p>
+        Nick Cheung, Lynnsey Ong, Tanya Boutros, Tahmid Hafiz
+      </p>
+    </div>
+  </section>
+  <!-- END OF SUMMARY -->
+
+  <!-- /////////////////////////////  BACKGROUND /////////////////////////////  -->
+
+  <div>
+    <h3 class="divider left-aligned"> background </h3>
+  </div>
+
+   <section class="container-details">
+    <div class="block-details">
+      <h3> <b> Why was a design intervention needed? </b> </h3>
+      <p>
+        After meeting Jordan, the owner of the company, we learned that he was unsure if his <b>mobile website</b> was up to par with the desktop version. He stated that this was important as the website is the main source of client communication and transactional flow, and that anecdotally, most users who try to use his website end up switching to the desktop version.
+      </p>
+    </div>
+  </section>
+
+  <!-- /////////////////////////////  END OF BACKGROUND /////////////////////////////  -->
+
+
+
+  <!-- /////////////////////////////  PREPARATION /////////////////////////////  -->
+  <div class="divide">
+    <h3 class="divider left-aligned"> preparation </h3>
+    <!-- <p> For the first week our team prepared a usability study, pre/post-test questionnaires, evaluation methods, and tasks. </p> -->
+  </div>
+
+  <div class="block-details">
+    <h3> <b> Study Plan  </b> </h3>
+    <p>
+       Our goal for the study plan was to conduct a <b> usability study </b> by having participants go through the mobile version of TheDipDr.com. We wanted to interview 3-5 <b>non-customers</b> and 3-5 <b>existing customers</b> to track the expectations and habits of current versus prospective clients.
+    </p>
+  </div>
+
+  <div class="block-details">
+    <h3> <b> Pre-Test Questionnaire </b> </h3>
+    <p>
+      We created a pre-test questionnaire as a way to further categorize the participants in our study. This was done by asking a range of questions that determined their understanding of vehicle customization and familiarity with TheDipDr themselves.
+    </p>
+    <img class="header-image" src="compressed-images/DipDr/preQuestionnaire.png" alt="pre test questionnaire">
+  </div>
+
+  <div class="block-details">
+    <h3> <b> Post-Test Questionnaire </b> </h3>
+    <p>
+      A post-test questionnaire was created so that we could have a list of standardized qualitative data to compare the experiences of each user.
+    </p>
+    <img class="header-image" src="compressed-images/DipDr/postQuestionnaire.png" alt="problems and insights brainstorming">
+  </div>
+
+  <!-- /////////////////////////////  END OF PREPARATION /////////////////////////////  -->
+
+
+
+  <!-- /////////////////////////////  PERFORMING THE STUDY /////////////////////////////  -->
+  <div class="divide">
+    <h3 class="divider left-aligned"> performing the study </h3>
+  </div>
+
+  <div class="block-details">
+    <h3> <b> Tasks </b> </h3>
+    <p>
+      We decided to conduct a <b> think-aloud </b> usability study by having our users go through the mobile app while performing a series of tasks while being voice recorded. These were designed to test the experience of accessing some of the most popular services that The Dip Dr. offers.
+    </p>
+    <img class="header-image" src="compressed-images/DipDr/tasks.png" alt="problems and insights brainstorming">
+  </div>
+
+  <div class="block-details">
+    <h3> <b> Transcription </b> </h3>
+    <p>
+      We trascribed each of the comments made by our interviewees for both qualitative and quantitative analysis for a total of 114 entries.
+    </p>
+    <img class="header-image" src="compressed-images/DipDr/Transcription.png" alt="problems and insights brainstorming">
+  </div>
+  <!-- /////////////////////////////  END OF PERFORMING THE STUDY /////////////////////////////  -->
+
+
+  <!-- /////////////////////////////  ANALYZING THE DATA  /////////////////////////////  -->
+  <div class="divide">
+    <h3 class="divider left-aligned"> analyzing the data </h3>
+  </div>
+
+  <div class="block-details">
+    <h3> <b>  </b> </h3>
+    <p>
+      In the end our team decided on two main design concepts: a <b> soap quiz </b> for helping users determine what product suits their needs best, and a revamped <b> product description page </b> that better communicates each product.
+    </p>
+    <img class="header-image" src="compressed-images/new/FinalConcepts.png" alt="problems and insights brainstorming">
+  </div>
+
+
+  <!-- /////////////////////////////  END OF PROCESS  /////////////////////////////  -->
+
+
+
+  <!-- /////////////////////////////  SOLUTION  /////////////////////////////  -->
+  <div class="divide">
+    <h3 class="divider left-aligned"> solution </h3>
+    <p>
+      Our solution consisted of a website redesign which focused on the implementation of a soap quiz, improved product description page, and also improved product filtering. Our main goal was to help give prospective shoppers the <b> confidence </b> to purchase products online as opposed to having to visit a physical store.
+    </p>
+  </div>
+
+  <div class="block-details">
+    <h3> <b> Home Page & Product Listings </b> </h3>
+    <p>
+      The new home page now includes banners displaying the <b> latest products </b>, <b>soap quiz</b>, and the <b> company's background & mission </b>. This solves the problem of online shoppers not knowing where to start and also being unsure of Milklady's goals.
+    </p>
+    <img class="header-image" src="compressed-images/milklady/homeAndProducts.png" alt="problems and insights brainstorming">
+  </div>
+
+  <div class="block-details">
+    <h3> <b> Soap Quiz </b> </h3>
+    <p>
+      We designed the soap quiz to help give shoppers <b> product recommendations </b> by asking a series of questions to help pinpoint which soaps may best suit the user's needs.
+    </p>
+    <img class="header-image" src="compressed-images/milklady/quiz.png" alt="problems and insights brainstorming">
+  </div>
+
+  <div class="block-details">
+    <h3> <b> PDP </b> </h3>
+    <p>
+      The revised product description page includes essential information that was lacking from the original: <b> user reviews</b>, <b> product precautions</b>, <b> related products</b>, and <b> detailed ingredient information</b>.
+    </p>
+    <img class="header-image" src="compressed-images/milklady/PDP.png" alt="problems and insights brainstorming">
+  </div>
+
+  <!-- /////////////////////////////  END OF SOLUTION /////////////////////////////  -->
+
+
+<!-- ///////////////////////////// REFLECTION /////////////////////////////  -->
+
+  <div class="divide">
+    <h3 class="divider left-aligned"> reflection </h3>
+  </div>
+  <p>
+    This term-long project was the first time I had worked extensively with a client for such a long period of time. It was a rewarding exeprience that taught me how to apply design principles in a way that I believed was a taste of what it's like to work in UX.
+  </p>
+
+  <p>
+    I am proud of what my team and I was able to achieve. It taught us how design truly is an iterative process and that the journey is just as important -- if not more important -- than the final product itself.
+  </p>
+<!-- /////////////////////////////  END OF REFLECTION /////////////////////////////  -->
+
+</section>
+
+
+
+  <!-- <div>
+    <h3 class="divider left-aligned"> design process </h3>
+  </div> -->
+
+  <footer class="section-divider-footer">
+    <div class="container-footer">
+      <p> ©2021 - Liam Tangilag | </p>
+      <a class="link" href="citations.html"> citations </a>
+      <a class="link" href="style-guide.html"> style guide </a>
+      <a class="link" href="https://github.com/leeummtee/P03"> github </a>
+    </div>
+  </footer>
+
+  <!-- linking the animation library  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- linking javascript file -->
+  <script src="js/main.js"></script>
+</body>
