@@ -532,13 +532,6 @@ p, h1, h2, h3 {
   padding-top: 10rem;
 }
 
-.container-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border-radius: 3px;
-}
-
 .header-img {
   width: 50rem;
 }

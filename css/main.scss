@@ -605,14 +605,14 @@ p, h1, h2, h3 {
 .about {
   padding-top: 10rem;
 }
-.container-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border-radius: 3px;
-  // margin-bottom: -20rem;
-  // justify-content: left;
-}
+// .container-header {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   border-radius: 3px;
+//   // margin-bottom: -20rem;
+//   // justify-content: left;
+// }
 
 .header-img {
   width: 50rem;
@@ -699,18 +699,6 @@ p, h1, h2, h3 {
   flex: 0 100%;
   align-items: center;
 }
-
-
-
-// .container-header {
-//   padding-top: 16rem;
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   // border-radius: 3px;
-//   padding-bottom: 15rem;
-// }
-
 
 .container-projects h2 {
   color: white;
