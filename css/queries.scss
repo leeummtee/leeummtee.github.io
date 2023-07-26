@@ -45,12 +45,6 @@
   //   width:100%;
   // }
 
-  .header-image {
-    object-fit: cover;
-    width: 100%;
-    padding-top:10rem;
-  }
-
 }
 
 /* MOBILE RESPONSIVENESS QUERIES */
@@ -61,11 +55,15 @@
     margin-right: 0.5rem;
   }
 
-  .image-link {
-    height: 30rem;
-    object-fit: cover;
-    vertical-align: bottom;
+  .image-link{
+    // width:100%;
+    height:10rem;
+    // width:10rem;
   }
+
+  // .header-image {
+  //   padding-top:10;
+  // }
 
   //responsive menu https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered
   .button-nav {
@@ -73,24 +71,24 @@
     width: 100%;
   }
 
-  .topnav-left {
-    padding-top: 5.2rem;
-    // padding-left: 3rem;
-  }
-
-  .icon-right-justified {
-    position: absolute;
-    right: 0.5rem;
-    top: 4rem;
-  }
-
-  .sidenav .closebtn {
-    position: absolute;
-    right: 1.25rem;
-    top: 2.5rem;
-    font-size: 60px;
-    margin-left: 50px;
-  }
+  // .topnav-left {
+  //   padding-top: 5.2rem;
+  //   // padding-left: 3rem;
+  // }
+  //
+  // .icon-right-justified {
+  //   position: absolute;
+  //   right: 0.5rem;
+  //   top: 4rem;
+  // }
+  //
+  // .sidenav .closebtn {
+  //   position: absolute;
+  //   right: 1.25rem;
+  //   top: 2.5rem;
+  //   font-size: 60px;
+  //   margin-left: 50px;
+  // }
 
   .project-details-wrapper {
     max-width: 100vw;
