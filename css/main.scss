@@ -604,6 +604,7 @@ p, h1, h2, h3 {
 /* ~~~~~~~~~~~~~~~~~~~~ABOUT PAGE~~~~~~~~~~~~~~~~~~~~~~~ */
 .about {
   padding-top: 10rem;
+  display:flex;
 }
 // .container-header {
 //   display: flex;
@@ -632,8 +633,6 @@ p, h1, h2, h3 {
   height: 50rem;
   object-fit: cover;
 }
-
-
 
 .block-about p {
   width: 30vw;
