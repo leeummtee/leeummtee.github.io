@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html class="wrapper" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title> Misc </title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/queries.css" rel="stylesheet">
+  <!-- linking the fade animations that must be loaded in header -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <nav>
+    <!-- logo in the top left -->
+    <div class="topnav">
+      <div class="topnav-left">
+        <a href="index.html">
+          <span class="logo"> Liam Tangilag </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
+    <!-- reference for making sidenav accessible with tab index https://knowbility.org/blog/2020/accessible-slide-menus/ -->
+    <button class="icon-right-justified" onclick="openNav()">&#9776;</button>
+    <div id="mySidenav" class="sidenav inactive">
+      <a href="javascript:void(0)" role="button" class="closebtn" aria-label="close navigation" onclick="closeNav()">&times;</a>
+      <a href="about.html">contact + about</a>
+
+      <!-- drop down reference from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript -->
+      <button id="menu" class="dropbtn" onclick="toggleMenu()"> projects <i class="small-arrow down"> </i></button>
+      <div id="menu-box" class="drop-content">
+        <a href="index.html">overview</a>
+        <a href="oneiota.html">OneIota</a>
+        <a href="milklady.html">Milklady Soap Co.</a>
+        <a href="dipdr.html">The Dip Dr.</a>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <img class="header-image" src="compressed-images/miscBannerNew.jpg" alt="App header">
+  </div>
+
+<!-- WRAPPER FOR BODY CONTENT -->
+<section class="project-details-wrapper">
+
+  <!-- POSTER -->
+  <section class="container-details">
+    <div class="block-details">
+      <h2> <b> School Poster </b> </h2>
+      <p>
+         Created a digital poster to help introduce <b> Discord </b>to students entering <b> SIAT </b> (the School of Interactive Arts & Technology) during the heat of the COVID-19 <b>pandemic</b>.
+       </p>
+       <img class="header-image" src="compressed-images/poster-outcome.png" alt="App header"> </img>
+    </div>
+  </section>
+  <!-- END OF POSTER -->
+
+  <!-- MOTION GRAPHIC -->
+  <section class="container-details">
+    <div class="block-details">
+      <h2> <b> Motion Graphic Animation </b> </h2>
+      <p>
+         Final project that I created in my first ever IAT course!...the video works, just not the embedded version I swear..
+       </p>
+       <iframe class="youtube-video" src="https://www.youtube.com/embed/OHuBZqkaE6g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </section>
+  <!-- END OF MOTION GRAPHIC -->
+
+  <!-- VIDEO EDITING -->
+  <section class="container-details">
+    <div class="block-details">
+      <h2> <b> Video Editing </b> </h2>
+      <p>
+         A found-footage trailer that I made to showcase the Toronto Raptors' 2019 championship run.
+       </p>
+       <iframe class="youtube-video" src="https://www.youtube.com/embed/gP4BHEAwcFM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </section>
+  <!-- END OF VIDEO EDITING -->
+
+  <!-- VIDEO EDITING -->
+  <section class="container-details">
+    <div class="block-details">
+      <h2> <b> Special Effects </b> </h2>
+      <p>
+         Short edit that was used to learn After Effects!
+       </p>
+       <iframe class="youtube-video" src="https://www.youtube.com/embed/J-AZ2EBmj1g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </section>
+  <!-- END OF VIDEO EDITING -->
+
+  <!-- MAGAZINE LAYOUTS -->
+  <section class="container-details">
+    <div class="block-details">
+      <h2> <b> Magazine Layout </b> </h2>
+      <p>
+         Layout I created at the beginning of the Toronto Raptors' 2019 playoff run... they really did win it all!
+       </p>
+       <img class="header-image" src="compressed-images/magazine.png" alt="App header"> </img>
+    </div>
+  </section>
+  <!-- END OF MAGAZINE LAYOUTS -->
+
+  <!-- MAGAZINE LAYOUTS -->
+  <section class="container-details">
+    <div class="block-details">
+      <h2> <b> Animation </b> </h2>
+      <p>
+         Animation + 3D models that my team and I created using Maya.
+       </p>
+       <iframe class="youtube-video" src="https://www.youtube.com/embed/qOZDPUT_TM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </section>
+  <!-- END OF MAGAZINE LAYOUTS -->
+
+
+</section>
+
+<footer class="section-divider-footer">
+  <div class="container-footer">
+    <p> Coded by Liam ©2023 | </p>
+    <a class="link" href="https://www.linkedin.com/in/liamtangilag/details/experience/"> LinkedIn </a>
+    <a class="link" href="https://www.linkedin.com/in/liamtangilag/details/experience/"> Resume </a>
+  </div>
+</footer>
+
+  <!-- linking the animation library  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- linking javascript file -->
+  <script src="js/main.js"></script>
+</body>
